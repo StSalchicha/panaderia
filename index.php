@@ -80,9 +80,11 @@
                             <td class="text-center">
                                 <div class="btn-group" role="group" aria-label="Opciones para el pan">
                                     <a href="editar.php?id=<?php echo $pan['id_pan']; ?>" class="btn btn-warning btn-sm">
+                                         Editar
                                         <i class="bi bi-pencil-fill"></i>
                                     </a>
                                     <a href="eliminar.php?id=<?php echo $pan['id_pan']; ?>" class="btn btn-danger btn-sm">
+                                         Eliminar
                                         <i class="bi bi-trash-fill"></i>
                                     </a>
                                 </div>

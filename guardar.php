@@ -3,8 +3,8 @@ include 'bd.php';
 
 $nombre = $_POST['nombre'];
 $descripcion = $_POST['descripcion'];
-$precio = $_POST['precio'];
-$stock = $_POST['stock'];
+$precio = floatval($_POST['precio']);
+$stock = intval($_POST['stock']);
 $id_cat = $_POST['id_cat'];
 
 if ($id_cat == "") {

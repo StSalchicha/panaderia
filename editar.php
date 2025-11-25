@@ -56,8 +56,8 @@
                     <div class="mb-3">
                         <label class="form-label">Tipo de Pan</label>
                         <select class="form-select" name="id_cat">
-                            <option value="NULL" <?php echo ($pan['id_cat'] == NULL) ? 'selected' : ''; ?>>
-                                (Misterioso...)
+                            <option value="" <?php echo ($pan['id_cat'] == NULL) ? 'selected' : ''; ?>
+                                > (Misterioso...)
                             </option>
                             
                             <?php foreach ($categorias as $cat): ?>

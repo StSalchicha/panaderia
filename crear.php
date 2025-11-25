@@ -44,7 +44,7 @@
                     <div class="mb-3">
                         <label class="form-label">Tipo de Pan</label>
                         <select class="form-select" name="id_cat">
-                            <option value="NULL">(Misterioso...)</option>
+                            <option value="">(Misterioso...)</option>
                             <?php foreach ($categorias as $cat): ?>
                                 <option value="<?php echo $cat['id_cat']; ?>">
                                     <?php echo htmlspecialchars($cat['nombre']); ?>
