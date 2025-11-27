@@ -11,7 +11,7 @@ create table pan (
 	id_pan serial primary key,
 	nombre varchar not null,
 	descripcion varchar,
-	precio decimal(3,2),
+	precio decimal(10,2),
 	stock int default 0,
 
 	id_cat int,
