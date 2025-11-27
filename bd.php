@@ -13,6 +13,7 @@
 
     $strCnx = "host=$host port=$port user=$user password=$password dbname=$dbname";
     $connection = pg_connect($strCnx);
+    return $connection;
     }
 
     // insertar
