@@ -1,8 +1,18 @@
 <?php
     // conexión
     function conectarBD(){
+    /*
         $connection = pg_connect("host=localhost port=5432 user=postgres password=madoka dbname=panaderia");
         return $connection;
+    */
+    $host = getenv('DB_HOST') ?: "localhost";
+    $port = getenv('DB_PORT') ?: "5432";
+    $user = getenv('DB_USER') ?: "postgres";
+    $password = getenv('DB_PASSWORD') ?: "madoka";
+    $dbname = getenv('DB_NAME') ?: "panaderia";
+
+    $strCnx = "host=$host port=$port user=$user password=$password dbname=$dbname";
+    $connection = pg_connect($strCnx);
     }
 
     // insertar
